@@ -1,0 +1,145 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="MAIN_STAFF.Master.vb" Inherits="FDA_CERTIFICATE_MDC.MAIN_STAFF" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ระบบหนังสือรับรองเพื่อการส่งออก</title>
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="user-scalable=0,initial-scale=1.0, maximum-scale=1, minimum-scale=1" />
+
+        <script src="../Desigh/Scripts/jquery-1.8.2.js"></script>
+    <script src="../Desigh/Scripts/bootstrap.js"></script>
+
+
+    <link href="../Desigh/Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Desigh/css/plugins/morris.css" rel="stylesheet" />
+    <link href="../Desigh/css/sb-admin5.css" rel="stylesheet" />
+
+    <script src="../Desigh/Html5/html5shiv.min.js"></script>
+    <script src="../Desigh/Html5/respond.min.js"></script>
+    <link href="../Desigh/css/Theme.css" rel="stylesheet" />
+       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../Desigh/Html5/html5shiv.min.js"></script>
+      <script src="../Desigh/Html5/respond.min.js"></script>
+    <![endif]-->
+
+   	<link href="../Desigh/css/bootstrap-theme.min.css" rel="stylesheet" />   
+	<link href="../Desigh/css/bootstrap.min.css" rel="stylesheet" type="text/css" />	
+	<link href="../Desigh/css/font.css" rel="stylesheet" type="text/css" />
+	<link href="../Desigh/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="../Desigh/css/custom-bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="../Desigh/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Desigh/css/Custom3.css" rel="stylesheet" />
+    <link href="../Desigh/css/Custom.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <div>
+        <div>
+   <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+	<div class="wrapper two" >
+            <header class="header" style="background:#034EA2;" >
+                
+			<div class="inner">
+                <a href="" class="logo">
+                    <img src="../Desigh/imgs/logo@2x.png" alt="Logo" />
+                </a>
+				<div class="title-header">
+					<!-- For Mobile -->
+					<a href="" class="logo">
+						<img src="../Desigh/imgs/logo@2x.png" alt="Logo" />
+					</a>
+					<!-- For Mobile -->
+                    <span class="circle"  style="background:#034EA2;"></span>
+                    <%--<asp:Literal ID="Literal2" runat="server"></asp:Literal>--%>
+					<div class="media-body">
+						<h1>ระบบหนังสือรับรองการส่งออกเครื่องมือแพทย์</h1>
+						<p>สำนักงานคณะกรรมการอาหารและยา กระทรวงสาธารณสุข</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<nav class="nav-top" style="border-bottom:3px solid #EEB900;">
+			<div class="inner">
+				<!-- For Mobile -->
+				<a href="#" class="nav-toggle">
+					<i class="fa fa-bars"></i> เมนู
+				</a>
+				<!-- For Mobile -->
+				<ul class="nav-menu">
+					<%--<li >
+						<a href=""><i class="fa fa-gear"></i> รายงาน<span></span></a>
+						<!-- For Mobile -->
+						<ul class="sub-menu">
+							<li class="active"><a href=""><span></span>สบ. 5</a></li>
+							<li><a href=""><span></span>สบ. 3</a></li>
+							<li><a href=""><span></span>อาหารทั่วไป</a></li>
+						</ul>
+						<!-- For Mobile -->
+					</li>--%>
+					<li>
+							<a href="../STAFF_MAIN_CER/FRM_STAFF_LIST_CER.aspx"><i class="fa fa-search"></i> หน้าแรก<span></span></a>
+					</li>
+                    	<li>
+							<a href="../REPLACEMENT/REPLACEMENT_STATION.aspx" target="_blank"><i class="fa fa-search"></i> เจ้าหน้าที่ทำแทน<span></span></a>
+					</li>
+                    	<li>
+							&nbsp;</li>
+					<li>
+						<a href="http://openid.egov.go.th/"><i class="fa fa-power-off"></i> ออกจากระบบ<span></span></a>
+					</li>
+                     <li>  <asp:HyperLink ID="hl_name" runat="server"></asp:HyperLink></li>
+                    <%--<li>
+                            <asp:HyperLink ID="hl_organization" runat="server"></asp:HyperLink>
+                    </li>--%>
+				</ul>
+			</div>
+		</nav>
+		
+            <div class="nav-catagory"  style="background-color:#034EA2;" >
+             
+			<div class="inner">
+				<h3><asp:Label ID="lbl_head" runat="server" Text="ระบบหนังสือรับรองการส่งออกเครื่องมือแพทย์"></asp:Label></h3>
+         
+			</div>
+		</div>
+		<div class="container"  style="margin-left: 0px;">
+			<%--<ul class="nav-left">
+				<li class="active">
+					<a href=""><span></span>สบ. 5</a>
+				</li>
+				<li>
+					<a href=""><span></span>สบ. 3</a>
+				</li>
+				<li>
+					<a href=""><span></span>อาหารทั่วไป</a>
+				</li>
+			</ul>--%>
+			<div class="content"  style="width: 120%; vertical-align:top;margin-left:10%;">
+				<!-- Simple Bootstrap Framework -->
+				 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+		
+					    </div>
+			</div>
+			</div>
+				<!-- Simple Bootstrap Framework -->
+			</div>	
+		</div>
+		<footer class="footer" style="background-color:#034EA2;">
+            <%--<asp:Literal ID="Literal4" runat="server"></asp:Literal>--%>
+			<div class="inner"><strong>สำนักงานคณะกรรมการอาหารและยา :</strong> 88/24 ถนนติวานนท์ อำเภอเมือง จังหวัดนนทบุรี 11000 โทรศัพท์ 0-2590-7000
+			</div>
+		</footer>
+	</div>
+    </form>
+</body>
+</html>

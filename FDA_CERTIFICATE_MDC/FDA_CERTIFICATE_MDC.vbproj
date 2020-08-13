@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{12FA9D6E-B1B5-4709-862B-E74276F7E6E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>FDA_CERTIFICATE_MDC</RootNamespace>
+    <AssemblyName>FDA_CERTIFICATE_MDC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FDA_CERTIFICATE_MDC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>FDA_CERTIFICATE_MDC.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=6.6.0.0, Culture=neutral, PublicKeyToken=940cfcde86f32efd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.12.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.12\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.Design, Version=2013.1.220.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI, Version=2013.1.220.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins, Version=2013.1.220.35, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CUSTOM_MAIN_CER\FRM_EXCEL.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_INDEX_CER.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_MAIN_LIST_CER.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_POPUP_CHECKUPLOAD.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM_ATTACH.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM.aspx" />
+    <Content Include="CUSTOM_MAIN_CER\FRM_POPUP_UPLOAD.aspx" />
+    <Content Include="Desigh\assets\brand\bootstrap-outline.svg" />
+    <Content Include="Desigh\assets\brand\bootstrap-punchout.svg" />
+    <Content Include="Desigh\assets\brand\bootstrap-solid.svg" />
+    <Content Include="Desigh\assets\css\docs.min.css" />
+    <Content Include="Desigh\assets\css\_src\docs.css" />
+    <Content Include="Desigh\assets\css\_src\pygments-manni.css" />
+    <Content Include="Desigh\assets\flash\ZeroClipboard.swf" />
+    <Content Include="Desigh\assets\img\components.png" />
+    <Content Include="Desigh\assets\img\devices.png" />
+    <Content Include="Desigh\assets\img\sass-less.png" />
+    <Content Include="Desigh\assets\js\customize.min.js" />
+    <Content Include="Desigh\assets\js\docs.min.js" />
+    <Content Include="Desigh\assets\js\ie-emulation-modes-warning.js" />
+    <Content Include="Desigh\assets\js\ie10-viewport-bug-workaround.js" />
+    <Content Include="Desigh\assets\js\ie8-responsive-file-warning.js" />
+    <Content Include="Desigh\assets\js\raw-files.min.js" />
+    <Content Include="Desigh\assets\js\_src\application.js" />
+    <Content Include="Desigh\assets\js\_src\customizer.js" />
+    <Content Include="Desigh\assets\js\_vendor\blob.js" />
+    <Content Include="Desigh\assets\js\_vendor\filesaver.js" />
+    <Content Include="Desigh\assets\js\_vendor\holder.js" />
+    <Content Include="Desigh\assets\js\_vendor\jszip.min.js" />
+    <Content Include="Desigh\assets\js\_vendor\less.min.js" />
+    <Content Include="Desigh\assets\js\_vendor\uglify.min.js" />
+    <Content Include="Desigh\assets\js\_vendor\ZeroClipboard.min.js" />
+    <Content Include="Desigh\Content\bootstrap-responsive.css" />
+    <Content Include="Desigh\Content\bootstrap-responsive.min.css" />
+    <Content Include="Desigh\Content\bootstrap-theme.css" />
+    <Content Include="Desigh\Content\bootstrap-theme.min.css" />
+    <Content Include="Desigh\Content\bootstrap.css" />
+    <Content Include="Desigh\Content\bootstrap.min.css" />
+    <Content Include="Desigh\Content\grid.css" />
+    <Content Include="Desigh\Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Desigh\Content\images\glyphicons-halflings.png" />
+    <Content Include="Desigh\Content\Site.css" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\jquery-ui.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Desigh\Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Desigh\Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Desigh\css\animate.css" />
+    <Content Include="Desigh\css\bootstrap.css" />
+    <Content Include="Desigh\css\bootstrap.min.css" />
+    <Content Include="Desigh\css\custom-bootstrap.css" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Desigh\css\custom-theme\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Desigh\css\custom-theme\jquery-ui-1.9.2.css" />
+    <Content Include="Desigh\css\custom-theme\jquery-ui-1.9.2.min.css" />
+    <Content Include="Desigh\css\custom.css" />
+    <Content Include="Desigh\css\Custom2.css" />
+    <Content Include="Desigh\css\font-awesome.css" />
+    <Content Include="Desigh\css\font-awesome.min.css" />
+    <Content Include="Desigh\css\font.css" />
+    <Content Include="Desigh\css\hoverdir.css" />
+    <Content Include="Desigh\css\jquery.contextmenu.css" />
+    <Content Include="Desigh\css\magnific-popup.css" />
+    <Content Include="Desigh\css\owl.carousel.css" />
+    <Content Include="Desigh\css\plugins\morris.css" />
+    <Content Include="Desigh\css\reset.css" />
+    <Content Include="Desigh\css\sb-admin5.css" />
+    <Content Include="Desigh\css\style.css" />
+    <Content Include="Desigh\css\style.ie6.css" />
+    <Content Include="Desigh\css\style.ie7.css" />
+    <Content Include="Desigh\css\StyleCer.css" />
+    <Content Include="Desigh\css\styleradgrid.css" />
+    <Content Include="Desigh\css\Theme.css" />
+    <Content Include="Desigh\dist\css\sb-admin-2.css" />
+    <Content Include="Desigh\dist\css\timeline.css" />
+    <Content Include="Desigh\dist\js\sb-admin-2.js" />
+    <Content Include="Desigh\fonts\fontawesome-webfont.svg" />
+    <Content Include="Desigh\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Desigh\fonts\rsu_bold-webfont.svg" />
+    <Content Include="Desigh\fonts\rsu_light-demo.html" />
+    <Content Include="Desigh\fonts\rsu_light-webfont.svg" />
+    <Content Include="Desigh\fonts\rsu_regular-demo.html" />
+    <Content Include="Desigh\fonts\rsu_regular-webfont.svg" />
+    <Content Include="Desigh\fonts\thaisansneue-bold-webfont.svg" />
+    <Content Include="Desigh\fonts\thaisansneue-light-webfont.svg" />
+    <Content Include="Desigh\fonts\thaisansneue-regular-webfont.svg" />
+    <Content Include="Desigh\Html5\html5shiv.min.js" />
+    <Content Include="Desigh\Html5\respond.min.js" />
+    <Content Include="Desigh\Images\01.png" />
+    <Content Include="Desigh\Images\02.png" />
+    <Content Include="Desigh\Images\03.png" />
+    <Content Include="Desigh\Images\accent.png" />
+    <Content Include="Desigh\Images\blockcontentbullets.png" />
+    <Content Include="Desigh\Images\Bottom_texture.jpg" />
+    <Content Include="Desigh\Images\bullet.png" />
+    <Content Include="Desigh\Images\button.png" />
+    <Content Include="Desigh\Images\calendar.gif" />
+    <Content Include="Desigh\Images\contact.jpg" />
+    <Content Include="Desigh\Images\FDA_LOGO.png" />
+    <Content Include="Desigh\Images\flow.png" />
+    <Content Include="Desigh\Images\footer_b.png" />
+    <Content Include="Desigh\Images\footer_s.png" />
+    <Content Include="Desigh\Images\footer_t.png" />
+    <Content Include="Desigh\Images\header-01.jpg" />
+    <Content Include="Desigh\Images\header.jpg" />
+    <Content Include="Desigh\Images\header.png" />
+    <Content Include="Desigh\Images\header5.png" />
+    <Content Include="Desigh\Images\headerManage.png" />
+    <Content Include="Desigh\Images\heroAccent.png" />
+    <Content Include="Desigh\Images\link photo.txt" />
+    <Content Include="Desigh\Images\menuitem.png" />
+    <Content Include="Desigh\Images\menuseparator.png" />
+    <Content Include="Desigh\Images\Middle_texture.jpg" />
+    <Content Include="Desigh\Images\nav.png" />
+    <Content Include="Desigh\Images\orderedList0.png" />
+    <Content Include="Desigh\Images\orderedList1.png" />
+    <Content Include="Desigh\Images\orderedList2.png" />
+    <Content Include="Desigh\Images\orderedList3.png" />
+    <Content Include="Desigh\Images\orderedList4.png" />
+    <Content Include="Desigh\Images\orderedList5.png" />
+    <Content Include="Desigh\Images\orderedList6.png" />
+    <Content Include="Desigh\Images\orderedList7.png" />
+    <Content Include="Desigh\Images\orderedList8.png" />
+    <Content Include="Desigh\Images\orderedList9.png" />
+    <Content Include="Desigh\Images\page_gl.png" />
+    <Content Include="Desigh\Images\postquote.png" />
+    <Content Include="Desigh\Images\preview.jpg" />
+    <Content Include="Desigh\Images\rssicon.png" />
+    <Content Include="Desigh\Images\sheet_h.png" />
+    <Content Include="Desigh\Images\sheet_s.png" />
+    <Content Include="Desigh\Images\sheet_v.png" />
+    <Content Include="Desigh\Images\spacer.gif" />
+    <Content Include="Desigh\Images\subitem.png" />
+    <Content Include="Desigh\Images\VS.png" />
+    <Content Include="Desigh\imgs\logo%402x.png" />
+    <Content Include="Desigh\imgs\spinner.gif" />
+    <Content Include="Desigh\imgs\watermark.png" />
+    <Content Include="Desigh\js\bootstrap.min.js" />
+    <Content Include="Desigh\js\custom.js" />
+    <Content Include="Desigh\js\holder.js" />
+    <Content Include="Desigh\js\html5.js" />
+    <Content Include="Desigh\js\jquery-1.8.3.js" />
+    <Content Include="Desigh\js\jquery-ui-1.9.2.js" />
+    <Content Include="Desigh\js\jquery-ui-1.9.2.min.js" />
+    <Content Include="Desigh\js\jquery-ui.js" />
+    <Content Include="Desigh\js\jquery.contextmenu.js" />
+    <Content Include="Desigh\js\jquery.hoverdir.js" />
+    <Content Include="Desigh\js\jquery.js" />
+    <Content Include="Desigh\js\jquery.magnific-popup.js" />
+    <Content Include="Desigh\js\jquery.slimscroll.min.js" />
+    <Content Include="Desigh\js\jquery.ui.touch.js" />
+    <Content Include="Desigh\js\jquery.validate.min.js" />
+    <Content Include="Desigh\js\owl.carousel.min.js" />
+    <Content Include="Desigh\js\waypoints.min.js" />
+    <Content Include="Desigh\Scripts\bootstrap.js" />
+    <Content Include="Desigh\Scripts\bootstrap.min.js" />
+    <Content Include="Desigh\Scripts\dataTables.bootstrap.js" />
+    <Content Include="Desigh\Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Desigh\Scripts\jquery-1.7.2.js" />
+    <Content Include="DATA_LINQ\Linq_CER.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_CER.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DATA_LINQ\Linq_CPN.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_CPN.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DATA_LINQ\Linq_Food.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_Food.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="DATA_LINQ\Linq_FDA_XML_DUMP.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_FDA_XML_DUMP.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="MAIN_AUTHEN\WebForm2.aspx" />
+    <Content Include="PDF\FRM_ATTACH_PREVIEW.aspx" />
+    <Content Include="REPLACEMENT\REPLACEMENT_STATION.aspx" />
+    <Content Include="STAFF_MAIN_CER\CHECK_LIST10.aspx" />
+    <Content Include="STAFF_MAIN_CER\DONWLOAD_LIST.aspx" />
+    <Content Include="STAFF_MAIN_CER\DOWNLOAD.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_SEARCH.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME_ATTACH.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_STAFF_SHOW_DATA2.aspx" />
+    <Content Include="STAFF_MAIN_CER\SERCH_STAFF_MAIN.aspx" />
+    <Content Include="TestXML.aspx" />
+    <Content Include="UC\UC_GRID_ATTACH.ascx" />
+    <None Include="Web References\FDA_SMS\FDA_SMS.disco" />
+    <Content Include="Web References\STOP_SAT_SUN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\STOP_SAT_SUN\Service1.disco" />
+    <Content Include="Web References\SV_CHECK\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\FDA_SMS\FDA_SMS.wsdl" />
+    <Content Include="Web References\FDA_SMS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\STOP_SAT_SUN\Service1.wsdl" />
+    <None Include="Web References\STOP_SAT_SUN\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\STOP_SAT_SUN\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\SV_CHECK\SV_CHECK_PAYMENT.disco" />
+    <Content Include="Web References\WS_ERROR_CENTER2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\WS_ERROR_CENTER2\WS_ERROR_CENTER.disco" />
+    <Content Include="Web References\WS_TaxnoAuthorize_BSN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="My Project\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Web References\SV_CHECK\SV_CHECK_PAYMENT.wsdl" />
+    <None Include="Web References\WS_ERROR_CENTER2\WS_ERROR_CENTER.wsdl" />
+    <None Include="Web References\WS_TaxnoAuthorize_BSN\WS_TaxnoAuthorize_BSN.disco" />
+    <Content Include="Web References\WS_Taxno_TaxnoAuthorize_2\Get_Profile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <Content Include="Web References\WS_Taxno_TaxnoAuthorize_2\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\WS_Taxno_TaxnoAuthorize_2\WS_Taxno_TaxnoAuthorize.disco" />
+    <Content Include="WS_CER_FOOD_UPDATE_PAYMENT.asmx" />
+    <Content Include="DATA_LINQ\Linq_CER_MDC.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Linq_CER_MDC.designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="DATA_LINQ\Linq_CER_MDC.dbml.layout">
+      <DependentUpon>Linq_CER_MDC.dbml</DependentUpon>
+    </None>
+    <None Include="Desigh\Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Desigh\Scripts\jquery-1.8.2.js" />
+    <Content Include="Desigh\Scripts\jquery-1.8.2.min.js" />
+    <None Include="Desigh\Scripts\jquery-1.9.1-vsdoc.js" />
+    <None Include="Desigh\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Desigh\Scripts\jquery-1.9.1.js" />
+    <Content Include="Desigh\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Desigh\Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Desigh\Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Desigh\Scripts\jquery.dataTables.min.js" />
+    <Content Include="Desigh\Scripts\jquery.searchabledropdown-1.0.7.min.js" />
+    <Content Include="Desigh\Scripts\jquery.searchabledropdown-1.0.7.src.js" />
+    <Content Include="Desigh\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Desigh\Scripts\WebForms\DetailsView.js" />
+    <Content Include="Desigh\Scripts\WebForms\Focus.js" />
+    <Content Include="Desigh\Scripts\WebForms\GridView.js" />
+    <Content Include="Desigh\Scripts\WebForms\Menu.js" />
+    <Content Include="Desigh\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Desigh\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Desigh\Scripts\WebForms\SmartNav.js" />
+    <Content Include="Desigh\Scripts\WebForms\TreeView.js" />
+    <Content Include="Desigh\Scripts\WebForms\WebForms.js" />
+    <Content Include="Desigh\Scripts\WebForms\WebParts.js" />
+    <Content Include="Desigh\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Desigh\Scripts\_references.js" />
+    <Content Include="Desigh\sh\help.png" />
+    <Content Include="Desigh\sh\magnifier.png" />
+    <Content Include="Desigh\sh\page_white_code.png" />
+    <Content Include="Desigh\sh\page_white_copy.png" />
+    <Content Include="Desigh\sh\printer.png" />
+    <Content Include="Desigh\sh\Scripts\bootstrap.js" />
+    <Content Include="Desigh\sh\Scripts\bootstrap.min.js" />
+    <Content Include="Desigh\sh\Scripts\dataTables.bootstrap.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.4.2.min.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.7.2.js" />
+    <None Include="Desigh\sh\Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.8.2.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.8.2.min.js" />
+    <None Include="Desigh\sh\Scripts\jquery-1.9.1-vsdoc.js" />
+    <None Include="Desigh\sh\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.9.1.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Desigh\sh\Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Desigh\sh\Scripts\jquery.dataTables.min.js" />
+    <Content Include="Desigh\sh\Scripts\jquery.searchabledropdown-1.0.7.min.js" />
+    <Content Include="Desigh\sh\Scripts\jquery.searchabledropdown-1.0.7.src.js" />
+    <Content Include="Desigh\sh\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\DetailsView.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\Focus.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\GridView.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\Menu.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\SmartNav.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\TreeView.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\WebForms.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\WebParts.js" />
+    <Content Include="Desigh\sh\Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Desigh\sh\Scripts\_references.js" />
+    <Content Include="Desigh\sh\shBrushJScript.js" />
+    <Content Include="Desigh\sh\shCore.css" />
+    <Content Include="Desigh\sh\shCore.js" />
+    <Content Include="Desigh\sh\shThemeDefault.css" />
+    <Content Include="FRM_APPROVE.aspx" />
+    <Content Include="MAIN_AUTHEN\AUTHEN_CER.aspx" />
+    <Content Include="FRM_LCN\FRM_SELECT_LCN.aspx" />
+    <Content Include="MAIN_AUTHEN\FRM_CHOOSE_STAFF.aspx" />
+    <Content Include="MAIN_AUTHEN\STRFF_AUTHEN_CER.aspx" />
+    <Content Include="PDF\PDF_PREVIEW2.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_REQUST.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_LIST.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_POPUP_STRFF_COMMENT_ADMIN.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_STAFF_LIST_CER.aspx" />
+    <Content Include="STAFF_MAIN_CER\FRM_STAFF_MAIN_CER.aspx" />
+    <Content Include="UC\UC_ATTACH.ascx" />
+    <Content Include="UC\UC_INFORMATION.ascx" />
+    <Content Include="Web References\WS_AUTHEN3\AUTHENTICATION.wsdl" />
+    <Content Include="Web References\WS_AUTHEN3\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <Content Include="MASTER_PAGE\POPUP.Master" />
+    <Content Include="MASTER_PAGE\MAIN_STAFF.Master" />
+    <None Include="packages.config" />
+    <None Include="Web References\WS_AUTHEN\AUTHENTICATION.disco" />
+    <Content Include="Web References\WS_AUTHEN3\AUTHENTICATION.disco" />
+    <Content Include="Web References\WS_MAIL\FDA_MAIL.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLASS\BAO\BAO.vb" />
+    <Compile Include="CLASS\BAO\BAO_MASTER.vb" />
+    <Compile Include="CLASS\BAO\BAO_SHOW.vb" />
+    <Compile Include="CLASS\BAO\BAO_STOREPROCEDURE.vb" />
+    <Compile Include="CLASS\BAO\BAO_TRANSECTION.vb" />
+    <Compile Include="CLASS\BAO_SESSION\CLS_SESSION.vb" />
+    <Compile Include="CLASS\Class_Center.vb" />
+    <Compile Include="CLASS\cls_holiday.vb" />
+    <Compile Include="CLASS\COMMON\ClassDataset.vb" />
+    <Compile Include="CLASS\COMMON\CLS_XML.vb" />
+    <Compile Include="CLASS\COMMON\COMMON.vb" />
+    <Compile Include="CLASS\CONTROL_COLOR.vb" />
+    <Compile Include="CLASS\DAO\DAO.vb" />
+    <Compile Include="CLASS\DAO\DAO_MDC_CER.vb" />
+    <Compile Include="CLASS\DAO\DAO_CER.vb" />
+    <Compile Include="CLASS\DAO\DAO_CPN.vb" />
+    <Compile Include="CLASS\DAO\DAO_FDA_XML.vb" />
+    <Compile Include="CLASS\GEN_XML\GEN_XML_CER_MDC.vb" />
+    <Compile Include="CLASS\GEN_XML\GEN_XML_CFS_CMT_CER.vb" />
+    <Compile Include="CLASS\PDF_XML\BIND_PDF_CFS_CER.vb" />
+    <Compile Include="CLASS\PDF_XML\BIND_PDF_MDC_CER.vb" />
+    <Compile Include="CLASS\TEDA_CLASS\TEDA_PDF.vb" />
+    <Compile Include="CLASS\TEDA_CLASS\TEDA_WORD.vb" />
+    <Compile Include="CLASS\TEDA_CLASS\TEDA_XML.vb" />
+    <Compile Include="CLASS\XML\XML_CER_MDC.vb" />
+    <Compile Include="CLASS\XML\XML_CFS_CMT_CER.vb" />
+    <Compile Include="CLASS\XML\XML_DT_MASTER.vb" />
+    <Compile Include="CLASS\XML\XML_DT_SHOW.vb" />
+    <Compile Include="CUSTOM_MAIN_CER\FRM_EXCEL.aspx.designer.vb">
+      <DependentUpon>FRM_EXCEL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_EXCEL.aspx.vb">
+      <DependentUpon>FRM_EXCEL.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_INDEX_CER.aspx.designer.vb">
+      <DependentUpon>FRM_INDEX_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_INDEX_CER.aspx.vb">
+      <DependentUpon>FRM_INDEX_CER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_MAIN_LIST_CER.aspx.designer.vb">
+      <DependentUpon>FRM_MAIN_LIST_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_MAIN_LIST_CER.aspx.vb">
+      <DependentUpon>FRM_MAIN_LIST_CER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CHECKUPLOAD.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_CHECKUPLOAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CHECKUPLOAD.aspx.vb">
+      <DependentUpon>FRM_POPUP_CHECKUPLOAD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM_ATTACH.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_CONFRIM_ATTACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM_ATTACH.aspx.vb">
+      <DependentUpon>FRM_POPUP_CONFRIM_ATTACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_CONFRIM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_CONFRIM.aspx.vb">
+      <DependentUpon>FRM_POPUP_CONFRIM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_UPLOAD.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_UPLOAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOM_MAIN_CER\FRM_POPUP_UPLOAD.aspx.vb">
+      <DependentUpon>FRM_POPUP_UPLOAD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CLASS\Utility_Aspose.vb" />
+    <Compile Include="DATA_LINQ\Linq_CER.designer.vb">
+      <DependentUpon>Linq_CER.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_CER.vb">
+      <DependentUpon>Linq_CER.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_CER_MDC.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linq_CER_MDC.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_CER_MDC.vb">
+      <DependentUpon>Linq_CER_MDC.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_CPN.designer.vb">
+      <DependentUpon>Linq_CPN.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_CPN.vb">
+      <DependentUpon>Linq_CPN.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_FDA_XML_DUMP.designer.vb">
+      <DependentUpon>Linq_FDA_XML_DUMP.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_FDA_XML_DUMP.vb">
+      <DependentUpon>Linq_FDA_XML_DUMP.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DATA_LINQ\Linq_Food.designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Linq_Food.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_APPROVE.aspx.designer.vb">
+      <DependentUpon>FRM_APPROVE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_APPROVE.aspx.vb">
+      <DependentUpon>FRM_APPROVE.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\AUTHEN_CER.aspx.designer.vb">
+      <DependentUpon>AUTHEN_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\AUTHEN_CER.aspx.vb">
+      <DependentUpon>AUTHEN_CER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FRM_LCN\FRM_SELECT_LCN.aspx.designer.vb">
+      <DependentUpon>FRM_SELECT_LCN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_LCN\FRM_SELECT_LCN.aspx.vb">
+      <DependentUpon>FRM_SELECT_LCN.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\FRM_CHOOSE_STAFF.aspx.designer.vb">
+      <DependentUpon>FRM_CHOOSE_STAFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\FRM_CHOOSE_STAFF.aspx.vb">
+      <DependentUpon>FRM_CHOOSE_STAFF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\STRFF_AUTHEN_CER.aspx.designer.vb">
+      <DependentUpon>STRFF_AUTHEN_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\STRFF_AUTHEN_CER.aspx.vb">
+      <DependentUpon>STRFF_AUTHEN_CER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MAIN_AUTHEN\WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_STAFF.Master.designer.vb">
+      <DependentUpon>MAIN_STAFF.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_STAFF.Master.vb">
+      <DependentUpon>MAIN_STAFF.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN.Master.designer.vb">
+      <DependentUpon>MAIN.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN.Master.vb">
+      <DependentUpon>MAIN.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_NODE.Master.designer.vb">
+      <DependentUpon>MAIN_NODE.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_NODE.Master.vb">
+      <DependentUpon>MAIN_NODE.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTER_PAGE\POPUP.Master.designer.vb">
+      <DependentUpon>POPUP.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MASTER_PAGE\POPUP.Master.vb">
+      <DependentUpon>POPUP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_NODE_CER.Master.designer.vb">
+      <DependentUpon>MAIN_NODE_CER.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MASTER_PAGE\MAIN_NODE_CER.Master.vb">
+      <DependentUpon>MAIN_NODE_CER.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PDF\FRM_ATTACH_PREVIEW.aspx.designer.vb">
+      <DependentUpon>FRM_ATTACH_PREVIEW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\FRM_ATTACH_PREVIEW.aspx.vb">
+      <DependentUpon>FRM_ATTACH_PREVIEW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDF\PDF_PREVIEW2.aspx.designer.vb">
+      <DependentUpon>PDF_PREVIEW2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDF\PDF_PREVIEW2.aspx.vb">
+      <DependentUpon>PDF_PREVIEW2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="REPLACEMENT\REPLACEMENT_STATION.aspx.designer.vb">
+      <DependentUpon>REPLACEMENT_STATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="REPLACEMENT\REPLACEMENT_STATION.aspx.vb">
+      <DependentUpon>REPLACEMENT_STATION.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\CHECK_LIST10.aspx.designer.vb">
+      <DependentUpon>CHECK_LIST10.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\CHECK_LIST10.aspx.vb">
+      <DependentUpon>CHECK_LIST10.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\DONWLOAD_LIST.aspx.designer.vb">
+      <DependentUpon>DONWLOAD_LIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\DONWLOAD_LIST.aspx.vb">
+      <DependentUpon>DONWLOAD_LIST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\DOWNLOAD.aspx.designer.vb">
+      <DependentUpon>DOWNLOAD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\DOWNLOAD.aspx.vb">
+      <DependentUpon>DOWNLOAD.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_SEARCH.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_SEARCH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_SEARCH.aspx.vb">
+      <DependentUpon>FRM_POPUP_SEARCH.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME_ATTACH.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_STAFF_CONFRIME_ATTACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME_ATTACH.aspx.vb">
+      <DependentUpon>FRM_POPUP_STAFF_CONFRIME_ATTACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_REQUST.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF_REQUST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_REQUST.aspx.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF_REQUST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_LIST.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF_LIST.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF_LIST.aspx.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF_LIST.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_REMARK_STAFF.aspx.vb">
+      <DependentUpon>FRM_POPUP_REMARK_STAFF.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_STAFF_CONFRIME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STAFF_CONFRIME.aspx.vb">
+      <DependentUpon>FRM_POPUP_STAFF_CONFRIME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STRFF_COMMENT_ADMIN.aspx.designer.vb">
+      <DependentUpon>FRM_POPUP_STRFF_COMMENT_ADMIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_POPUP_STRFF_COMMENT_ADMIN.aspx.vb">
+      <DependentUpon>FRM_POPUP_STRFF_COMMENT_ADMIN.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_LIST_CER.aspx.designer.vb">
+      <DependentUpon>FRM_STAFF_LIST_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_LIST_CER.aspx.vb">
+      <DependentUpon>FRM_STAFF_LIST_CER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_MAIN_CER.aspx.designer.vb">
+      <DependentUpon>FRM_STAFF_MAIN_CER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_MAIN_CER.aspx.vb">
+      <DependentUpon>FRM_STAFF_MAIN_CER.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_SHOW_DATA2.aspx.designer.vb">
+      <DependentUpon>FRM_STAFF_SHOW_DATA2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\FRM_STAFF_SHOW_DATA2.aspx.vb">
+      <DependentUpon>FRM_STAFF_SHOW_DATA2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\SERCH_STAFF_MAIN.aspx.designer.vb">
+      <DependentUpon>SERCH_STAFF_MAIN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF_MAIN_CER\SERCH_STAFF_MAIN.aspx.vb">
+      <DependentUpon>SERCH_STAFF_MAIN.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="UC\UC_GRID_ATTACH.ascx.designer.vb">
+      <DependentUpon>UC_GRID_ATTACH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_GRID_ATTACH.ascx.vb">
+      <DependentUpon>UC_GRID_ATTACH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ATTACH.ascx.designer.vb">
+      <DependentUpon>UC_ATTACH.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ATTACH.ascx.vb">
+      <DependentUpon>UC_ATTACH.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UC\UC_INFORMATION.ascx.designer.vb">
+      <DependentUpon>UC_INFORMATION.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_INFORMATION.ascx.vb">
+      <DependentUpon>UC_INFORMATION.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\FDA_SMS\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\STOP_SAT_SUN\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\SV_CHECK\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_AUTHEN3\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_AUTHEN\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_ERROR_CENTER2\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_GETDATE_WORKING\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_MAIL\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="TestXML.aspx.designer.vb">
+      <DependentUpon>TestXML.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestXML.aspx.vb">
+      <DependentUpon>TestXML.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Web References\WS_TaxnoAuthorize_BSN\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_Taxno_TaxnoAuthorize_2\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WS_CER_FOOD_UPDATE_PAYMENT.asmx.vb">
+      <DependentUpon>WS_CER_FOOD_UPDATE_PAYMENT.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DATA_LINQ\Linq_CER.dbml.layout">
+      <DependentUpon>Linq_CER.dbml</DependentUpon>
+    </None>
+    <None Include="DATA_LINQ\Linq_CPN.dbml.layout">
+      <DependentUpon>Linq_CPN.dbml</DependentUpon>
+    </None>
+    <None Include="DATA_LINQ\Linq_Food.dbml.layout">
+      <DependentUpon>Linq_Food.dbml</DependentUpon>
+    </None>
+    <None Include="DATA_LINQ\Linq_FDA_XML_DUMP.dbml.layout">
+      <DependentUpon>Linq_FDA_XML_DUMP.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Desigh\Content\bootstrap-theme.css.map" />
+    <Content Include="Desigh\Content\bootstrap.css.map" />
+    <Content Include="Desigh\css\bootstrap.css.map" />
+    <Content Include="Desigh\fonts\fontawesome-webfont.eot" />
+    <Content Include="Desigh\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Desigh\fonts\fontawesome-webfont.woff" />
+    <Content Include="Desigh\fonts\FontAwesome.otf" />
+    <Content Include="Desigh\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Desigh\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Desigh\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Desigh\fonts\rsu_bold-webfont.eot" />
+    <Content Include="Desigh\fonts\rsu_bold-webfont.ttf" />
+    <Content Include="Desigh\fonts\rsu_bold-webfont.woff" />
+    <Content Include="Desigh\fonts\rsu_bold-webfont.woff2" />
+    <Content Include="Desigh\fonts\rsu_light-webfont.eot" />
+    <Content Include="Desigh\fonts\rsu_light-webfont.ttf" />
+    <Content Include="Desigh\fonts\rsu_light-webfont.woff" />
+    <Content Include="Desigh\fonts\rsu_light-webfont.woff2" />
+    <Content Include="Desigh\fonts\rsu_regular-webfont.eot" />
+    <Content Include="Desigh\fonts\rsu_regular-webfont.ttf" />
+    <Content Include="Desigh\fonts\rsu_regular-webfont.woff" />
+    <Content Include="Desigh\fonts\rsu_regular-webfont.woff2" />
+    <Content Include="Desigh\fonts\thaisansneue-bold-webfont.eot" />
+    <Content Include="Desigh\fonts\thaisansneue-bold-webfont.ttf" />
+    <Content Include="Desigh\fonts\thaisansneue-bold-webfont.woff" />
+    <Content Include="Desigh\fonts\thaisansneue-light-webfont.eot" />
+    <Content Include="Desigh\fonts\thaisansneue-light-webfont.ttf" />
+    <Content Include="Desigh\fonts\thaisansneue-light-webfont.woff" />
+    <Content Include="Desigh\fonts\thaisansneue-regular-webfont.eot" />
+    <Content Include="Desigh\fonts\thaisansneue-regular-webfont.ttf" />
+    <Content Include="Desigh\fonts\thaisansneue-regular-webfont.woff" />
+    <Content Include="Desigh\fonts\_DS_Store" />
+    <Content Include="Desigh\imgs\_DS_Store" />
+    <Content Include="Desigh\less\bordered-pulled.less" />
+    <Content Include="Desigh\less\core.less" />
+    <Content Include="Desigh\less\fixed-width.less" />
+    <Content Include="Desigh\less\font-awesome.less" />
+    <Content Include="Desigh\less\icons.less" />
+    <Content Include="Desigh\less\larger.less" />
+    <Content Include="Desigh\less\list.less" />
+    <Content Include="Desigh\less\mixins.less" />
+    <Content Include="Desigh\less\path.less" />
+    <Content Include="Desigh\less\rotated-flipped.less" />
+    <Content Include="Desigh\less\spinning.less" />
+    <Content Include="Desigh\less\stacked.less" />
+    <Content Include="Desigh\less\variables.less" />
+    <Content Include="Desigh\less\_DS_Store" />
+    <Content Include="Desigh\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Desigh\scss\font-awesome.scss" />
+    <Content Include="Desigh\scss\_bordered-pulled.scss" />
+    <Content Include="Desigh\scss\_core.scss" />
+    <Content Include="Desigh\scss\_fixed-width.scss" />
+    <Content Include="Desigh\scss\_icons.scss" />
+    <Content Include="Desigh\scss\_larger.scss" />
+    <Content Include="Desigh\scss\_list.scss" />
+    <Content Include="Desigh\scss\_mixins.scss" />
+    <Content Include="Desigh\scss\_path.scss" />
+    <Content Include="Desigh\scss\_rotated-flipped.scss" />
+    <Content Include="Desigh\scss\_spinning.scss" />
+    <Content Include="Desigh\scss\_stacked.scss" />
+    <Content Include="Desigh\scss\_variables.scss" />
+    <Content Include="Desigh\sh\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="MASTER_PAGE\MAIN.Master" />
+    <Content Include="MASTER_PAGE\MAIN_NODE.Master" />
+    <Content Include="MASTER_PAGE\MAIN_NODE_CER.Master" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\DEPLOY_SYSTEM.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\WS_AUTHEN\AUTHENTICATION.wsdl" />
+    <None Include="Web References\WS_AUTHEN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Web References\WS_MAIL\FDA_MAIL.wsdl" />
+    <Content Include="Web References\WS_MAIL\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <Content Include="Web References\WS_GETDATE_WORKING\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </Content>
+    <None Include="Web References\WS_GETDATE_WORKING\Service1.wsdl" />
+    <None Include="Web References\WS_GETDATE_WORKING\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WS_GETDATE_WORKING\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\WS_TaxnoAuthorize_BSN\WS_TaxnoAuthorize_BSN.wsdl" />
+    <None Include="Web References\WS_Taxno_TaxnoAuthorize_2\WS_Taxno_TaxnoAuthorize.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.111.28.108/Mail/FDA_MAIL.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_MAIL\</RelPath>
+      <UpdateFromURL>http://10.111.28.108/Mail/FDA_MAIL.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_MAIL_FDA_MAIL</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://10.111.28.108/WS_SMS/FDA_SMS.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FDA_SMS\</RelPath>
+      <UpdateFromURL>http://10.111.28.108/WS_SMS/FDA_SMS.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_FDA_SMS_FDA_SMS</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.104/ws_authen2/AUTHENTICATION.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_AUTHEN\</RelPath>
+      <UpdateFromURL>http://164.115.28.104/ws_authen2/AUTHENTICATION.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_AUTHEN_Authentication</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.104/WS_AUTHEN3/AUTHENTICATION.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_AUTHEN3\</RelPath>
+      <UpdateFromURL>http://164.115.28.104/WS_AUTHEN3/AUTHENTICATION.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_AUTHEN3_Authentication</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.105/WS_ERROR_CENTER/WEB_SERVICE/WS_ERROR_CENTER.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_ERROR_CENTER2\</RelPath>
+      <UpdateFromURL>http://164.115.28.105/WS_ERROR_CENTER/WEB_SERVICE/WS_ERROR_CENTER.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_ERROR_CENTER_WS_ERROR_CENTER</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.108/WS_DATE/Service1.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\STOP_SAT_SUN\</RelPath>
+      <UpdateFromURL>http://164.115.28.108/WS_DATE/Service1.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_STOP_SAT_SUN_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.108/WS_DATE/Service1.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_GETDATE_WORKING\</RelPath>
+      <UpdateFromURL>http://164.115.28.108/WS_DATE/Service1.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_GETDATE_WORKING_Service1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.108/WS_get_Profile_By_Identify/WS_Taxno_TaxnoAuthorize.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_Taxno_TaxnoAuthorize_2\</RelPath>
+      <UpdateFromURL>http://164.115.28.108/WS_get_Profile_By_Identify/WS_Taxno_TaxnoAuthorize.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_Taxno_TaxnoAuthorize_2_WebService1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.108/WS_TaxnoAuthorize_BSN/WS_TaxnoAuthorize_BSN.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_TaxnoAuthorize_BSN\</RelPath>
+      <UpdateFromURL>http://164.115.28.108/WS_TaxnoAuthorize_BSN/WS_TaxnoAuthorize_BSN.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_WS_TaxnoAuthorize_BSN_WebService1</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://164.115.28.133/SPECIAL_PAYMENT_TXC_BSN/WEBSERVICE/SV_CHECK_PAYMENT.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SV_CHECK\</RelPath>
+      <UpdateFromURL>http://164.115.28.133/SPECIAL_PAYMENT_TXC_BSN/WEBSERVICE/SV_CHECK_PAYMENT.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>FDA_CERTIFICATE_MDC_SV_CHECK_PAYMENT_SV_CHECK_PAYMENT</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Text</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60431</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51089/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

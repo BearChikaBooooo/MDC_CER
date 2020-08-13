@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_CFS_CENTER_DEMO4" Class="Linq_CERDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=164.115.28.124;Initial Catalog=FDA_CFS_CENTER_DEMO5;Persist Security Info=True;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_CFS_CENTERConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.GEN_RCV_NUMBER" Member="GEN_RCV_NUMBERs">
+    <Type Name="GEN_RCV_NUMBER">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="YEAR" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PVCODE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TYPE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LCNNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GENNO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FORMAT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GROUP_NO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="REF_IDA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAS_PROCESS" Member="MAS_PROCESSes">
+    <Type Name="MAS_PROCESS">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PROCESS_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PROCESS_DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GROUP_CER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFS_FOOD_COUNTRY" Member="CFS_FOOD_COUNTRies">
+    <Type Name="CFS_FOOD_COUNTRY">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_CER_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="COUNTRY_NAME_THA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="COUNTRY_NAME_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UNIT_CER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VALUE_EXPORT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFS_FOOD_FML" Member="CFS_FOOD_FMLs">
+    <Type Name="CFS_FOOD_FML">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_PRODUCT" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FML_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FML_QTY" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="FML_UNIT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_STAFF" Member="CER_FOOD_STAFFs">
+    <Type Name="CER_FOOD_STAFF">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAFF_CITIZEN_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FK_STAFF_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAS_STAFF_TYPE" Member="MAS_STAFF_TYPEs">
+    <Type Name="MAS_STAFF_TYPE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STAFF_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAS_STATUS" Member="MAS_STATUS1s">
+    <Type Name="MAS_STATUS1">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="STATUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STATUS_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="STATUS_GROUP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFS_FOOD_STAFF_REMARK_VERSION" Member="CFS_FOOD_STAFF_REMARK_VERSIONs">
+    <Type Name="CFS_FOOD_STAFF_REMARK_VERSION">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="REMARK" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DATE_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STAFF_CITIZEN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_SELECT_ATTACH" Member="CER_FOOD_SELECT_ATTACHes">
+    <Type Name="CER_FOOD_SELECT_ATTACH">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_HEAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FK_IDA_TEMPLATE_ATTACH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ATTACH_PIORITY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_STATUS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_WORD_OUT_PUT_TEMPLATE" Member="CER_FOOD_WORD_OUT_PUT_TEMPLATEs">
+    <Type Name="CER_FOOD_WORD_OUT_PUT_TEMPLATE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PROCESS_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FFILE_NAME" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CASE_CER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DESCRIPTION" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="TYPE_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CASE_CER_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GMP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_MAS_FDTYPE_ENG" Member="CER_FOOD_MAS_FDTYPE_ENGs">
+    <Type Name="CER_FOOD_MAS_FDTYPE_ENG">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fdtypenm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="engnm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fdtypecd" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFS_FOOD_PRODUCT" Member="CFS_FOOD_PRODUCTs">
+    <Type Name="CFS_FOOD_PRODUCT">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FK_IDA_CER_NO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PRODUCT_MAIN_THA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_MAIN_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_THA" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_ENG" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NEW_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="REGNOS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_SET_OUTPUT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="NAME_EXPORT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EXPORT_ONLY" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CFS_FOOD_HEAD" Member="CFS_FOOD_HEADs">
+    <Type Name="CFS_FOOD_HEAD">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RCVNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RCVDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CFS_TYPE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TR_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COUNTRY" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CITIZEN_UPLOAD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CITIZEN_DOWNLOAD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CITIZEN_AUTHORIZE" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LCNSID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="XML_NAME" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="FK_IDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STATUS_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DOWN_ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFS_ADDRESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_COUNT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFS_ADDRESS1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FK_PROCESS_ID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="REF_CODE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ATTACH_1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_3" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_4" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_5" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_6" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CMT_UNIT" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CFS_ADDRESS_SALE1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_ADDRESS_SALE2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_COMMENT_ADMIN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_COMMENT_BUSINESS" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UNTIL_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CITIZEN_APPROVED" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STATUS_PRINT" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CITIZEN_PRINT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_ADDRESS_OUTPUT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_ADDRESS1_OUTPUT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_ADDRESS_SALE1_OUTPUT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_ADDRESS_SALE2_OUTPUT" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SYSTEM_GROUP" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="DATE_LAST_PRINT" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APPROVE_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FULL_THANM" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_TOPIC_OUTPUT_1" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CFS_EDIT_TOPIC_OUTPUT_2" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LAST_MODIFLY_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PAUSE_TIME" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="COMMENT_ADMIN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ATTACH_7" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_8" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EXPORT_ONLY" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ATTACH_9" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ATTACH_10" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LCNTYPECD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LCNNO" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="STAFF_CITIZEN_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SENIOR_STAFF_CITIZEN_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MASTER_CITIZEN_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ATTRIBUTE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PACKING" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PURPOSE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="OBJECTIVE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DISTRINCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PROVINCE" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PRODUCT_TYPE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CERTIFIES_CHECK1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CERTIFIES_CHECK2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CONTAIN" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="FINISH_DATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_WORK_LIMIT" Member="CER_FOOD_WORK_LIMITs">
+    <Type Name="CER_FOOD_WORK_LIMIT">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PROCESS_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SYSTEM_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WORK_LIMIT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CER_FOOD_WORK_SCHEDULE" Member="CER_FOOD_WORK_SCHEDULEs">
+    <Type Name="CER_FOOD_WORK_SCHEDULE">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RECEIVE_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="CONSIDER_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="COMPLETE_DATE" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TRANSECTION_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PROCESS_ID" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NUMBER" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

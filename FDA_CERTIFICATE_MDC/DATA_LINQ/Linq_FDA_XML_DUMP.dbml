@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="FDA_XML" Class="Linq_FDA_XML_DUMPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=164.115.28.124;Initial Catalog=FDA_XML;Persist Security Info=True;User ID=fusion" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="FDA_XML_DUMP_DATAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XML_FOOD" Member="XML_FOODs">
+    <Type Name="XML_FOOD">
+      <Column Name="IDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pvncd" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="lcnno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lcnsid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fdpdtno" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="lcntypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="prdnmt" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="prdnme" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Producer_Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="groupname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NewCode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="cntcd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="appdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="expdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UpdateDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="rid" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cer_expdate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Brand" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Addr" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="fdtypecd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fdtypenm" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="thanmowner" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.food_export" Member="food_exports">
+    <Type Name="food_export">
+      <Column Name="lcnsid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fdpdtno" Type="System.Decimal" DbType="Decimal(13,0) NOT NULL" CanBeNull="false" />
+      <Column Name="prdnmt" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="prdnme" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mthcd" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.food_export_check" Member="food_export_checks">
+    <Type Name="food_export_check">
+      <Column Name="lcnsid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fdpdtno" Type="System.Decimal" DbType="Decimal(13,0) NOT NULL" CanBeNull="false" />
+      <Column Name="prdnmt" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="prdnme" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="mthcd" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

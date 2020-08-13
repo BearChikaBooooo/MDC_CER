@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 20.5" name="Linq_CER_MDC">
+  <DataContextMoniker Name="/Linq_CER_MDCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="3a47e804-cbb0-40a6-a9a3-e1af3e124300" isExpanded="false" absoluteBounds="5.375, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_SUBTYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a62442a-bf94-46a3-9d52-8dfd3838b6fb" absoluteBounds="5.39, 3.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a647c2c2-07e5-45bc-b376-b03f018c3321" isExpanded="false" absoluteBounds="3, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MAS_TEMPLATE_PROCESS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="76e6c6fc-18a2-43a5-b0d4-a3e947e16f47" absoluteBounds="3.015, 1.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a92eafd9-6ea5-4120-83bc-35068d2214bf" isExpanded="false" absoluteBounds="3, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/TRANSACTION_DOWNLOAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c9cdb602-5cc9-4930-9aa6-22be5b6cb11d" absoluteBounds="3.015, 2.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ac7b9e55-87ec-4b77-b46c-7f678e5df100" isExpanded="false" absoluteBounds="3, 3.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/sysisocnt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4917329a-bf09-4513-9f7e-42712f62c890" absoluteBounds="3.015, 3.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="10880afb-c09e-4225-a0f0-a94f3b26a3b6" isExpanded="false" absoluteBounds="0.5, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/TEMPLATE_ATTACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ebc0e71-f19c-49be-ad6e-579dbb05169a" absoluteBounds="0.51500000000000012, 1.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bd0cba11-e3a9-4399-9657-676bb1b590eb" isExpanded="false" absoluteBounds="0.5, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/TRANSACTION_UPLOAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11e0d16b-0d56-4275-b80d-585ce0f147e0" absoluteBounds="0.51500000000000012, 2.835, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe7a74a7-c7e8-4d99-aabf-c86aeccdc965" isExpanded="false" absoluteBounds="0.5, 3.5, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_GEN_RCV_NO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cde6477c-3ab0-453b-8d2a-f6afd3c2eccd" absoluteBounds="0.51500000000000012, 3.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="903c103b-4e64-4c00-b927-a1dc28d13539" isExpanded="false" absoluteBounds="0.5, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_COMMON_ID" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a24cf857-6cb1-4cfd-9765-f1ca277555c9" absoluteBounds="0.515, 5.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="09e0b727-aa61-4a80-876f-7f4b7d16f8b4" isExpanded="false" absoluteBounds="2.875, 4.625, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_RGTNO_IRGT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa83cd2f-8bee-4945-8441-e452c97fd7fa" absoluteBounds="2.89, 5.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e89b92a-0005-4549-b25e-a5341f748bab" isExpanded="false" absoluteBounds="5.375, 4.5, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_DOCNO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d97baf05-c8c0-4f52-96e6-f8ed417c193c" absoluteBounds="5.39, 4.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c44e02a7-99d8-43f8-ac4b-5e8706ecee94" isExpanded="false" absoluteBounds="0.5, 6.875, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_LCNNO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="55f1044c-5fe6-4a5e-acf2-774a26aaee52" absoluteBounds="0.51500000000000012, 7.3350000000000009, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18146770-5e26-433a-a275-87f92d6f8b3f" isExpanded="false" absoluteBounds="3.125, 6.875, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_NUMBER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86c2157e-097b-4e7d-a9c8-3d6cab7ede76" absoluteBounds="3.1399999999999997, 7.3350000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b3dfb990-fcda-462a-82d3-1e0d0295b80b" isExpanded="false" absoluteBounds="3, 5.75, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_RCVNO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="095ea830-3ede-4d1b-b138-f9894ab885db" absoluteBounds="3.0150000000000006, 6.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02dacf7e-a44e-455d-bf76-cfd6f6f7e521" isExpanded="false" absoluteBounds="5.375, 5.625, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_RCVNO_CMNM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8656703b-718b-4a9c-b339-6e82f2dece0e" absoluteBounds="5.3900000000000006, 6.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84866b08-eda6-4fc4-b943-4cee8d25331b" isExpanded="false" absoluteBounds="5.5, 6.875, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_RefCerNo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d64d9d9-ce6f-4e4e-a046-bc002b40a04e" absoluteBounds="5.5150000000000006, 7.3350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8070e7f-c76e-4026-a1eb-6856808cfc35" isExpanded="false" absoluteBounds="0.5, 5.625, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/GEN_RefItemNo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac79d23b-0600-4699-967d-6ddcb1d3bb38" absoluteBounds="0.51500000000000057, 6.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="148c74f8-f875-4aee-87e9-c87e2896bd4c" isExpanded="false" absoluteBounds="0.5, 8, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_GEN_RGT_NO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11a7497f-f27a-4349-a7e3-172fcae7fecb" absoluteBounds="0.51500000000000012, 8.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a78259c-28ce-4ed8-9632-3a107f850939" isExpanded="false" absoluteBounds="3.5, 8, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MAS_STATUS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9aa9cb7c-3b8e-44f2-91f1-d662e5f894f9" absoluteBounds="3.5149999999999997, 8.46, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2a67aaf-38b1-4855-98be-f6a504ee0207" isExpanded="false" absoluteBounds="5.75, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/FILE_ATTACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87082ea8-e5b2-4819-a69a-6a5cd13c7bab" absoluteBounds="5.765, 0.96, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26aecf5a-02e7-42c4-9e68-0e536e547697" isExpanded="false" absoluteBounds="3.125, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_PRODUCT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4df1c47-8d14-483b-9bba-25c4e5e91816" absoluteBounds="3.1399999999999997, 0.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="75bf6b04-fb39-4c6c-be03-4b73838123f8" isExpanded="false" absoluteBounds="8.75, 1.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_LCNNO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f49aa63-fa56-4a00-ab9a-cfa54e5d51b2" absoluteBounds="8.765, 1.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9ac431cb-f9e9-4ac8-a5f3-5199b405d60a" isExpanded="false" absoluteBounds="8.25, 4.125, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_HISTORY_LOG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2754583d-ec7a-4d07-9085-49a742b3cba5" absoluteBounds="8.265, 4.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8cc638f7-b4c3-48a6-978e-89a1e1a4609d" isExpanded="false" absoluteBounds="5.5, 2.25, 2, 0.45">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER_COUNTRY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4e2da95-6601-48a5-ac0e-b10e14fe4c5d" absoluteBounds="5.515, 2.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5116eb06-9005-4b4c-849b-764a41c9030b" absoluteBounds="5.75, 1.125, 2, 19.078025716145834">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/irgt" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2d99187-0763-47d7-bfb9-bbc2b67dd062" absoluteBounds="5.765, 1.585, 1.9700000000000002, 18.518025716145832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2dd21bf1-c058-4482-9037-44c025d9c5c8" absoluteBounds="8.125, 1.375, 2, 16.001202799479167">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_MN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cc755240-c107-4fe1-925c-00ea778e83d5" absoluteBounds="8.14, 1.835, 1.9700000000000002, 15.441202799479166" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5237a3c0-b5ae-47dc-b69b-da76e866eed8" absoluteBounds="3.75, 1.625, 2, 16.193504231770834">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_MR" />
+      <nestedChildShapes>
+        <elementListCompartment Id="152d59b4-d902-4bad-9a4d-42266185ffb9" absoluteBounds="3.7649999999999997, 2.085, 1.9700000000000002, 15.633504231770832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dbdde121-6f8b-4847-b6bc-3f01f2cb53a3" absoluteBounds="1.625, 1.875, 2, 16.770408528645834">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_MC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25182388-ff95-47e4-8efc-f2c75ed28faa" absoluteBounds="1.6400000000000001, 2.335, 1.9700000000000002, 16.210408528645832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12519d68-c5ec-4c53-8d49-8c44b49517b6" absoluteBounds="5.25, 1.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MAS_TEMPLATE_UPLOAD_LIST" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b7c84f62-6291-4c82-834f-cdb89dadd4e8" absoluteBounds="5.265, 1.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67edf7e2-e378-40ea-9742-8d1b970c691a" absoluteBounds="0.5, 0.5, 2, 15.808901367187502">
+      <DataClassMoniker Name="/Linq_CER_MDCDataContext/MDC_CER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24030e01-a3bd-42c0-b688-ae392dcbfea9" absoluteBounds="0.51499999999999968, 0.96, 1.9700000000000002, 15.2489013671875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

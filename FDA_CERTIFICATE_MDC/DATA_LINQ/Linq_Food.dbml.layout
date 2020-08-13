@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Linq_Food">
+  <DataContextMoniker Name="/Linq_FoodDataContext" />
+  <nestedChildShapes>
+    <classShape Id="d6028976-f288-461a-8640-c69cb6446943" isExpanded="false" absoluteBounds="1.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/falcn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e2c5e70-2a3d-4c7c-9163-1e9e4d632ce1" absoluteBounds="1.3899999999999997, 0.96, 1.9700000000000002, 12.172078450520832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1802b846-ad0e-4c0f-b562-a4d43878124f" isExpanded="false" absoluteBounds="1.375, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/fabsncdtlcn" />
+      <nestedChildShapes>
+        <elementListCompartment Id="337dc224-9cad-469a-8b35-06ecc17862ea" absoluteBounds="1.3900000000000001, 2.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e935da8-9d0e-4fe8-a95e-c0a4b6e2d779" isExpanded="false" absoluteBounds="1.375, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/falcnaddr" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61bda070-5ab8-4d03-9469-9c39b7f09fd6" absoluteBounds="1.3900000000000001, 1.585, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8cc6863-31bd-4b12-a1bb-c00ca9ed6280" isExpanded="false" absoluteBounds="1.375, 2.375, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/flabelinitial" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ac8c4e21-5bef-4ddd-bb8e-7fffe27aaeee" absoluteBounds="1.3900000000000001, 2.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cac7928a-4099-4034-9ce8-3ff0c13a3985" isExpanded="false" absoluteBounds="3.5, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/fafdtype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81f1c3b7-ee34-430c-a221-5f414a400689" absoluteBounds="3.5149999999999997, 1.585, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ecb4030-00c1-4765-b26b-3958f81628f2" isExpanded="false" absoluteBounds="3.5, 1.75, 2, 0.45">
+      <DataClassMoniker Name="/Linq_FoodDataContext/falcntype" />
+      <nestedChildShapes>
+        <elementListCompartment Id="db7b90b5-48aa-43bf-acfa-1a44008182ea" absoluteBounds="3.5149999999999997, 2.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+
+@font-face {
+	font-family: 'sukhumvit';
+	src: url('../fonts/sukhumvitset-text-webfont.eot');
+	src: url('../fonts/sukhumvitset-text-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/sukhumvitset-text-webfont.woff2') format('woff2'),
+		 url('../fonts/sukhumvitset-text-webfont.woff') format('woff'),
+		 url('../fonts/sukhumvitset-text-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'sukumvit-Bd';
+	src: url('../fonts/sukhumvitset-bold-webfont.eot');
+	src: url('../fonts/sukhumvitset-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/sukhumvitset-bold-webfont.woff2') format('woff2'),
+		 url('../fonts/sukhumvitset-bold-webfont.woff') format('woff'),
+		 url('../fonts/sukhumvitset-bold-webfont.ttf') format('truetype');
+	font-weight: bold;
+	font-style: bold;
+}
+
+@font-face {
+    font-family: 'thsarabunnew';
+    src: url("../fonts/thsarabunnew-webfont.eot");
+    src: url("../fonts/thsarabunnew-webfont.eot?#iefix") format("embedded-opentype"), 
+        url("../fonts/thsarabunnew-webfont.woff") format("woff"), 
+        url("../fonts/thsarabunnew-webfont.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'thsarabunnew';
+  src: url("../fonts/thsarabunnew_bold-webfont.eot");
+  src: url("../fonts/thsarabunnew_bold-webfont.eot?#iefix") format("embedded-opentype"), 
+      url("../fonts/thsarabunnew_bold-webfont.woff") format("woff"), 
+      url("../fonts/thsarabunnew_bold-webfont.ttf") format("truetype");
+  font-style: bold;
+  font-weight: bold;
+}
+
+body{font-family:"thsarabunnew";}
+.RadGrid_Default th.rgHeader
+    {
+        background-image: none;
+        background-color: #e791b8;
+        /*#e791b8 !important*/
+        color:white;
+    }
+    .RadGrid_Default tr.rgRow {
+        background-image: none;
+        background-color: #FBEEF4;
+        font-family:'thsarabunnew';
+         /*FBEEF4*/
+    }
+    .RadGrid_Default tr.rgRow a:link{
+        color: blue;
+    }
+
+    .RadGrid_Default tr.rgAltRow {
+        background-image: none;
+        background-color: #ffffff;
+        font-family:'thsarabunnew';
+    }
+    .RadGrid_Default tr.rgAltRow a:link{
+       color: blue;
+    }
+
+    .RadGrid_Default .rgHoveredRow
+    {
+        background-color:#c5f285 !important;
+        background-image:none !important;
+    }
+    .RadGrid_Default .rgSelectedRow
+    {
+        background: none !important;
+        background: none #c5f285 !important;
+        color: black !important;
+    }
+    .RadGrid_Default .rgSelectedRow a
+    {
+        color: black !important;
+    }
+    .RadGrid_Default .rgFooter td
+    {
+        text-align:right;
+        font-family:'thsarabunnew';
+    }
+    .RadGrid_Default tr {
+        font-size: 14px;
+        font-family:'thsarabunnew';
+    }
+
+    ._select{display:block;position:relative;float:left;z-index:37;width:90%;height:46px;margin:0 0 0 0;
+             padding-left:10px;border:2px solid rgb(231, 145, 184);border-radius:3px;
+             background-image:url('../images/select-arrows.svg');background-repeat:no-repeat;background-size:auto auto;
+             background-position:right center;font-size:1.1em;color:rgb(0, 0, 0);
+    top: 2px;
+    left: 0px;
+}

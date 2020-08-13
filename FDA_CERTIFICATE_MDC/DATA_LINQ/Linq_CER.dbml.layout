@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12, 25.875" name="Linq_CER">
+  <DataContextMoniker Name="/Linq_CERDataContext" />
+  <nestedChildShapes>
+    <classShape Id="bb2e9bcb-c58d-4922-ab66-6ee98c7ee50c" absoluteBounds="0.75, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/Linq_CERDataContext/GEN_RCV_NUMBER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea223cbe-4441-4b24-9875-1bae64a14ffc" absoluteBounds="0.765, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3ecf60bd-726f-4594-aef4-058c3f149559" absoluteBounds="0.75, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/Linq_CERDataContext/MAS_PROCESS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5585bf1-ae5d-497d-ab32-5dd302a9e6c5" absoluteBounds="0.765, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2be3247-a92c-4020-b0d9-d0cc2c1e84c3" absoluteBounds="3.75, 4.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/Linq_CERDataContext/CFS_FOOD_COUNTRY" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a7f4098-73aa-4a9f-a186-fd154c0ec805" absoluteBounds="3.765, 5.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="57fbad76-fa14-4b84-ac1a-f9ed625d0a83" absoluteBounds="6.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/Linq_CERDataContext/CFS_FOOD_FML" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16102185-0187-4ba3-90fd-2587345855b9" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43949218-9705-4ede-8bee-e72a6a9ec1ec" absoluteBounds="6.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_STAFF" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7744a9f1-705f-4ad1-8cb7-03ac3334772f" absoluteBounds="6.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ba6faa91-8a6c-43bc-99e5-2f9b7e2a0c01" absoluteBounds="6.75, 6.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/Linq_CERDataContext/MAS_STAFF_TYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c0302f6-42f2-4dba-a5d4-b6dcb4766335" absoluteBounds="6.765, 7.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="50d254bb-8fea-47ff-951a-af1f4f9c959c" absoluteBounds="0.75, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Linq_CERDataContext/MAS_STATUS1" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e25528e4-0741-4444-b43f-fd8864fdfb94" absoluteBounds="0.765, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0834ead-f2a4-40f1-ba91-47598c168686" absoluteBounds="3.75, 8.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Linq_CERDataContext/CFS_FOOD_STAFF_REMARK_VERSION" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0460dc9f-0f4b-4a06-b768-47c6ae67366d" absoluteBounds="3.765, 9.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1977aa65-f7ff-4b2c-bc23-427b4e65be15" absoluteBounds="6.75, 8.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_SELECT_ATTACH" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb6d844b-6623-4f2e-8dcb-e018a1b89ea7" absoluteBounds="6.765, 9.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6b3544f-9332-474d-9518-e1e88149a634" absoluteBounds="9.75, 0.75, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_WORD_OUT_PUT_TEMPLATE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="452641d7-e9dd-4014-bff6-5a65e2353cb0" absoluteBounds="9.765, 1.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="da3dd547-7cda-4138-bb2b-a53466994b36" absoluteBounds="9.75, 4.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_MAS_FDTYPE_ENG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dddf64d8-5aaa-4485-b755-9e40a69ff26c" absoluteBounds="9.765, 5.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1580837-ddd9-4be6-80f1-d9c2f4858877" absoluteBounds="9.75, 7.75, 2, 2.9247054036458318">
+      <DataClassMoniker Name="/Linq_CERDataContext/CFS_FOOD_PRODUCT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86943082-399c-41f9-81bd-f47ef6e9c398" absoluteBounds="9.765, 8.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cdcc8a40-c22c-46aa-b674-5c63bace94a1" absoluteBounds="0.75, 11.75, 2, 13.885887044270831">
+      <DataClassMoniker Name="/Linq_CERDataContext/CFS_FOOD_HEAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7d05d737-fb67-4794-86e7-14a8b29e8dbf" absoluteBounds="0.765, 12.21, 1.9700000000000002, 13.325887044270832" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0a8fcf34-fb55-4d02-9c0e-62ed01720d12" absoluteBounds="3.75, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_WORK_LIMIT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b5183e3-1474-4b75-b3ff-d88c2d86fd04" absoluteBounds="3.765, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89335f79-8c05-4fb4-8dff-89aeb3c09ae4" absoluteBounds="6.75, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/Linq_CERDataContext/CER_FOOD_WORK_SCHEDULE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d1e798fa-5c5e-477b-aa69-cdc1fd3fd4e3" absoluteBounds="6.765, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
